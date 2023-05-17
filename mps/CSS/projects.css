@@ -1,0 +1,155 @@
+/* Projects Section */
+
+#projects {
+    background-color:transparent;
+    padding: 80px 0;
+    text-decoration: none;
+  }
+  
+  #projects h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #181E40;
+    text-decoration: none;
+  }
+ 
+  #projects p {text-shadow: 5px;
+
+  
+  }
+  #projects .projects .container h2{padding-left: 80px;}
+  #projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #projects .project {
+    width: 22%;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff3d 0%, #f8f8f84e 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  
+  #projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  #projects .project img {
+
+    border-radius: 15px 15px 0 0;
+    object-fit: contain;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+max-width: 300px;
+  }
+  
+  #projects .project-info {
+    padding: 15px;
+    margin-top: 15px;
+    background-color:transparent;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  #projects .project-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  #projects .project-info p {
+
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #181E40;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+  .animated-name {
+    font-size: 24px;
+    animation: backAndForth 1s infinite alternate;
+    display: inline-block;
+    background-image:  linear-gradient(45deg,  rgb(0, 157, 255),rgb(187, 0, 255,0.9), rgb(0, 221, 255));
+color: transparent;
+background-clip: text;
+  }
+
+  /*@keyframes backAndForth {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(50px);
+    }
+  }*/
+
+  .flip-out {
+    animation: flip-out 1s forwards;
+    backface-visibility: hidden;
+  }
+  
+  .flip-in {
+    animation: flip-in 1s forwards;
+    backface-visibility: hidden;
+    transform: rotateX(90deg);
+  }
+  
+  @keyframes flip-out {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+  
+  @keyframes flip-in {
+    0% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+  @keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+  @keyframes slide-in-blurred-top {
+    0% {
+      transform: translateY(-100%) blur(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%) blur(0);
+      opacity: 1;
+    }
+  }

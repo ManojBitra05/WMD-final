@@ -1,0 +1,399 @@
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 20px;
+}
+.navlist {
+  display: flex;
+  list-style: none;
+}
+
+.navlist li {
+  margin-left: 0px;
+}
+
+.navlist li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+header nav ul li a { 
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #f1592a; 
+}
+
+header .menu-btn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  display: none;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .menu-btn:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-color {
+  color: #F0F0F2;
+}
+
+.secondary-color {
+  color: #022873;
+}
+
+.tertiary-color {
+  color: #011640;
+}
+
+.accent-color {
+  color: #5681A6;
+}
+
+.background-color {
+  background-color: #BABDBF;
+}
+
+/*header,
+footer {
+  background-color: #F0F0F2;
+  color: #022873;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}*/
+
+header {
+  background-color: #181E40;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: -20px;
+}
+
+main {
+  padding: 80px 0;
+  margin-top: HEADER_HEIGHT;
+  background-image: linear-gradient(45deg, rgba(231, 204, 241, 0.3), rgba(195, 216, 229, 0.3), rgba(174, 227, 235, 0.3));
+}
+
+header nav ul li a {
+  color: #022873;
+}
+
+header nav ul li a:hover,
+header nav ul li.active a,
+nav li.active a {
+  color: #011640;
+}
+
+#project-background {
+  text-align: center;
+}
+
+.background-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 60px;
+}
+
+.background-image {
+  width: calc(50% - 5px - 20px);
+  object-fit: cover;
+}
+
+footer {
+  background-color: #011640;
+  color: #F0F0F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+
+
+
+
+header nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #011640;
+  transition: width 0.3s;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #011640;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-email p,
+.social-links a {
+  color: #F0F0F2;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-email p a,
+.social-links a:hover {
+  color: #011640;
+}
+
+.social-links a {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #3A6FA1;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-container > * {
+  margin: 10px;
+}
+
+.footer-container p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-container a:hover {
+  color: #f9f9f9;
+}
+
+
+
+.buttons-container {
+  display: flex;
+  gap: 5px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .buttons-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #010c40a6;
+  color: #ffffffc1;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: hsl(207, 39%, 40%);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* ... other CSS rules ... */
+}
+
+/* Add these lines to apply the given colors to the buttons */
+
+
+/* .btn:nth-child(1):hover {
+  background-color: #1F3140;
+}
+
+.btn:nth-child(2) {
+  background-color: #1F3140;
+}
+
+.btn:nth-child(2):hover {
+  background-color: #5E88BF;
+}
+
+.btn:nth-child(3) {
+  background-color: #5E88BF;
+}
+
+.btn:nth-child(3):hover {
+  background-color: #617C8C;
+}
+
+.btn:nth-child(4) {
+  background-color: #617C8C;
+}
+
+.btn:nth-child(4):hover {
+  background-color: #0D1C26;
+}
+
+.btn:nth-child(5) {
+  background-color: #0D1C26;
+}
+
+.btn:nth-child(5):hover {
+  background-color: #6B98BF;
+}*/
+
+/* ... other CSS rules ... */
+
+.project-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  margin: 20px 0;
+}
+
+.previous-project,
+.next-project {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #617C8C;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.previous-project:hover,
+.next-project:hover {
+  background-color: #3E6A8E;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,55 @@
+
+
+.identity-online img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 5px; /* Add border-radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Add transition effect for hover */
+  }
+
+
+  .photography img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 5px; /* Add border-radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Add transition effect for hover */
+  }
+  .photography img {
+    max-width: 100% !important;
+    max-height: 400px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+
+
+.content-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.content-wrapper section {
+    margin-bottom: 30px;
+}
+

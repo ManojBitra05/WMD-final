@@ -1,0 +1,240 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1F3140;
+  /* Color applied to the text */
+}
+
+
+
+header h1 {
+  color: inherit;
+  /* Keep the header h1 color unchanged */
+}
+
+/* Exclude the nav bar elements */
+.navbar-brand,
+.nav-link {
+  color: inherit;
+}
+
+#heuristic-reviews {
+  margin-bottom: 30px;
+}
+
+.severity-scale {
+  margin-top: 20px;
+}
+
+.severity-scale h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.severity-scale ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.severity-scale li {
+  margin-bottom: 10px;
+}
+
+.severity-scale li strong {
+  margin-right: 5px;
+}
+
+#heuristic-problems {
+  margin-bottom: 30px;
+}
+
+.problem-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.problem {
+  display: flex;
+  align-items: flex-start;
+  flex-basis: 100%;
+  background-color: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.problem h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.problem-description,
+.related-heuristic,
+.recommendation {
+  margin-bottom: 10px;
+}
+
+.problem-text {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.problem-image {
+  width: auto;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .problem {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .problem {
+    flex-basis: 100%;
+  }
+}
+
+#conducting-the-test {
+  margin-bottom: 30px;
+}
+
+#conducting-the-test h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#conducting-the-test h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #0b3038;
+}
+
+.test-section {
+  margin-bottom: 30px;
+}
+
+.test-list {
+  margin-bottom: 20px;
+}
+
+.test-list li {
+  margin-bottom: 10px;
+}
+
+.test-image {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin: 20px 20px 20px 0;
+  float: right;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  /* Add border-radius */
+  object-fit: cover;
+  transition: transform 0.3s;
+  /* Add transition effect for hover */
+}
+
+.test-image:hover {
+  transform: scale(1.05);
+  /* Add hover effect */
+}
+
+.design-gallery img {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  /* Add border-radius */
+  transition: transform 0.3s;
+  /* Add transition effect for hover */
+}
+
+.design-gallery img:hover {
+  transform: scale(1.05);
+  /* Add hover effect */
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 5px; /* Add border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Add transition effect for hover */
+}
+
+.full-width-image:hover {
+  transform: scale(1.02); /* Add hover effect */
+}
+
+.data-report img {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 5px; /* Add border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Add transition effect for hover */
+}
+
+.data-report img:hover {
+  transform: scale(1.02); /* Add hover effect */
+}
+
+.recommendations-gallery {
+  max-width: 100px;
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-right: 40px;
+  border-radius: 5px; /* Add border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Add transition effect for hover */
+}
+
+.recommendations-gallery:hover {
+  transform: scale(1.02); /* Add hover effect */
+}
+.recommendations-gallery img {
+
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 5px; /* Add border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Add transition effect for hover */
+}
+
+
+.recommendations-gallery img:hover {
+  transform: scale(1.05); /* Add hover effect */
+}
+.final-thoughtsimg {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 5px; /* Add border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Add transition effect for hover */
+}

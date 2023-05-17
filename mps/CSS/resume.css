@@ -1,0 +1,235 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .navlist {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .navlist li {
+    margin: 10px 0;
+  }
+}
+
+header nav ul li.active a {
+  color: #f1592a;
+  text-decoration: none;
+}
+
+nav li.active a {
+  color: #f1592a;
+  border-bottom: 2px solid #f1592a;
+}
+
+header nav ul li a:hover {
+  color: #f1592a;
+}
+
+
+section {
+  padding: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+
+div .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding-left: 150px;
+  padding-top: 50px;
+
+}
+
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+}
+
+section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+/* Summary */
+
+#summary p:first-child {
+  margin-bottom: 20px;
+}
+
+#summary a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#summary a:hover {
+  text-decoration: underline;
+}
+
+/* Education */
+
+#education h3:not(:first-child) {
+  margin-top: 20px;
+}
+
+/* Experience */
+
+#experience ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* Extracurricular */
+
+#extracurricular p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Honors */
+
+#honors p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Certifications */
+
+#certifications ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#certifications p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Skills */
+
+#skills h3:not(:first-child) {
+  margin-top: 20px;
+}
+
+#skills p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+footer .footer-bottom {
+  margin-top: 40px;
+  padding: 100px;
+}
+
+footer .footer-bottom p {
+  font-size: 18px;
+  margin: 0;
+  padding: 100px;
+}
+
+#resume .section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.resume-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+
+.resume-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-item .timeline {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #007bff;
+}
+
+.resume-item .timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #007bff;
+  border: 2px solid #fff;
+}
+
+.resume-item .timeline .timeline-date {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.resume-item .timeline .timeline-content {
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.resume-item .timeline .timeline-content h4 {
+  margin-bottom: 5px;
+}
+
+.resume-item .timeline .timeline-content p {
+  margin-bottom: 0;
+}
+
+/* Footer Styles */
+.section-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #617C8C;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.section-btn:hover {
+  background-color: #0D1C26;
+}
