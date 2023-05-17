@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>NYC Parks- UX Research Case Study</title>
+	<link rel="icon" href="img/logo1.png" type="image/png">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/png">
+
+	<script src="Javascript/Project1.js"></script>
+	<link rel="stylesheet" href="CSS/common.css">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="CSS/1nycparks.css">
+	<link rel="stylesheet" href="CSS/project1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
+	<script src="file.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo.png" alt="My Logo" />
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="work.html">Projects</a></li>
+					<li><a href="resume.html">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="project-header">
+				<h1>NYC Parks</h1>
+				<div class="project-description">
+					<h3></h3>
+					<p>Dive into this UX research case study of the NYC Parks mobile app, highlighting my skills in user
+						research, design insights, and functionality development.<br> Discover how I contributed as a UX
+						researcher, shaping an website for park enthusiasts to easily explore over 1,700 parks and
+						recreational facilities across New York City.</p>
+				</div>
+				<div class="project-info">
+					<div class="project-type">
+						<h3>Project Type:</h3>
+						<p>UX Research <br> Information Architecture</p>
+					</div>
+					<div class="project-role">
+						<h3>Role:</h3>
+						<p>UX Researcher</p>
+					</div>
+					<div class="project-time">
+						<h3>Project Time:</h3>
+						<p>2 weeks</p>
+					</div>
+					<div class="project-members">
+						<h3>Project Members:</h3>
+						<p>Aliyana - UX Designer <br> Lola - UI Designer </p>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="project-background">
+				<h2>Project Background</h2>
+				<p>NYC Parks is in charge of more than 30,000 acres of land, which is about 14% of New York City.<br>
+					This includes more than 5,000 different properties, such as Coney Island Beach, Central Park,
+					community gardens, and Greenstreets. nycgovparks.org is designed to show information about parks in
+					and around New York, including park history, activities, park events, opportunities to get involved,
+					and other services.</p>
+				<div class="background-images">
+					<img src="img/NYC parks/nycBackgroundimage1of2.png" class="background-image">
+					<img src="img/NYC parks/nycBackgroundimage2of2.png.png">
+				</div>
+			</section>
+
+
+			<section id="heuristic-reviews">
+				<h2>Heuristic Reviews</h2>
+				<p>As part of our UX research process, we conducted a heuristic review of the NYC Parks mobile app to
+					identify potential usability issues and areas for improvement. Using the Jeff Rubin Severity Scale,
+					we evaluated each issue based on its severity and likelihood to impact the user experience.</p>
+				<div class="severity-scale">
+					<h3>Severity Scale</h3>
+					<ul>
+						<li>
+							<strong>4: Unusable:</strong> The user is not able to or will not want to use a particular
+							part of the product because of the way that the product has been designed and implemented.
+						</li>
+						<li>
+							<strong>3: Severe:</strong> The user will probably use or attempt to use the product here,
+							but will be severely limited in his or her ability to do so.
+						</li>
+						<li>
+							<strong>2: Moderate:</strong> The user will be able to use the product in most cases, but
+							will have to undertake some moderate effort in getting around the problem.
+						</li>
+						<li>
+							<strong>1: Irritant:</strong> The problem occurs only intermittently, can be circumvented
+							easily, or is dependent on a standard that is outside the product’s boundaries. Could also
+							be a cosmetic problem.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="heuristic-problems">
+				<h2>Heuristic Problem Findings</h2>
+				<div class="problem-container">
+					<!-- Problem 1 -->
+					<div class="problem">
+						<div class="problem-text">
+							<h3>Irritant: Users will have to repeat steps if they want to change something before that
+							</h3>
+							<div class="problem-info">
+								<h4>Description</h4>
+								<p class="problem-description">
+
+									<br>Unable to change amount of donation after entering payment details.
+									<br>Users will have to reenter the details if they would like to edit the amount.
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Related Heuristic</h4>
+								<p class="related-heuristic">User control and freedom Help users recognize, diagnose,
+									and recover from errors
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Recommendation</h4>
+								<p class="recommendation">Allow users to edit amount when they review the payment</p>
+							</div>
+						</div>
+						<img src="img/NYC parks/1nychresticprob1.png" alt="Problem 1 Image" class="problem-image">
+					</div>
+
+					<!-- Problem 2 -->
+					<div class="problem">
+						<div class="problem-text">
+							<h3>Moderate: Search button is hard to find</h3>
+							<div class="problem-info">
+								<h4>Description</h4>
+								<p class="problem-description">In the park event filter section, the search button is at
+									the bottom of a long list of filters.
+									<br> Users will have to scroll all the way down to find.
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Related Heuristic</h4>
+								<p class="related-heuristic">User control and freedom Flexibility and efficiency of use
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Recommendation</h4>
+								<p class="recommendation">Have the search button at the top or where it could be easier
+									to find.
+									<br> Or make the filter section collapsible.
+								</p>
+							</div>
+						</div>
+						<img src="img/NYC parks/1nychresticprob2.png" alt="Problem 2 Image" class="problem-image">
+					</div>
+
+					<!-- Problem 3 -->
+					<div class="problem">
+						<div class="problem-text">
+							<h3>Severe: Difficult to find events by dates </h3>
+							<div class="problem-info">
+								<h4>Description</h4>
+								<p class="problem-description">When searching for events in a day range, users must
+									scroll past the first date to reach the second.
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Related Heuristic</h4>
+								<p class="related-heuristic">Flexibility and efficiency of use Aesthetic and minimalist
+									design
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Recommendation</h4>
+								<p class="recommendation">Have tabs for each day (within the day range selected) so
+									users can quickly view the events for that day.</p>
+							</div>
+						</div>
+						<img src="img/NYC parks/1nychresticprob3.png" alt="Problem 3 Image" class="problem-image">
+					</div>
+
+					<!-- Problem 4 -->
+					<div class="problem">
+						<div class="problem-text">
+							<h3>Moderate: search button is hard to find</h3>
+							<div class="problem-info">
+								<h4>Description</h4>
+								<p class="problem-description">There`s no option for users to view park events by miles
+									radius from a zip code of their choice. This might cause users more time to search
+									for events.
+
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Related Heuristic</h4>
+								<p class="related-heuristic">Flexibility and efficiency of use
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Recommendation</h4>
+								<p class="recommendation">Allow users to enter zip code and set miles radius to filter
+									park events
+								</p>
+							</div>
+						</div>
+						<img src="img/NYC parks/1nychresticprob4.png" alt="Problem 4 Image" class="problem-image">
+					</div>
+
+					<!-- Problem 5 -->
+					<div class="problem">
+						<div class="problem-text">
+							<h3>Severe: no product photos</h3>
+							<div class="problem-info">
+								<h4>Description</h4>
+								<p class="problem-description">There are no photos for the items listed in the shop.
+									Users won’t know what the products look like.
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Related Heuristic</h4>
+								<p class="related-heuristic">Recognition rather than recall
+								</p>
+							</div>
+							<div class="problem-info">
+								<h4>Recommendation</h4>
+								<p class="recommendation">Provide images for each items listed</p>
+							</div>
+						</div>
+						<img src="img/NYC parks/1nychresticprob5.png" alt="Problem 5 Image" class="problem-image">
+					</div>
+
+				</div>
+			</section>
+
+			<section id="conducting-the-test">
+				<h2>Conducting the Test</h2>
+				<h3>Goal</h3>
+				<p>By conducting the usability test, we hope to enhance the website's usability and make it more
+					effective and user-friendly.</p>
+				<h3>Research Questions</h3>
+				<ol>
+					<li>How do users look for park events and register?</li>
+					<li>How do users make a donation?</li>
+					<li>How are users able to purchase brand merchandise?</li>
+				</ol>
+				<img src="img/NYC parks/1nyccondtresqus1.png" alt="Introductory Questions Image" class="test-image">
+				<h3>Participants</h3>
+				<p>The main traits of the participants should be those of nature lovers who enjoy spending time outside
+					in parks and public areas. All age groups visit the parks, so we can choose the 18–45 age range as
+					the best fit for the study. Total Number of Participants: 6</p>
+				<h3>Methodology</h3>
+				<ul>
+					<li>Six people from different groups and backgrounds took part in a moderated usability test.</li>
+					<li>Each participant will have a 30-minute session that includes a short introduction, an interview,
+						a task on nycgovparks.org, and a debriefing.</li>
+					<li>The tasks are to look for park events and register, make donations and purchase merchandise.
+					</li>
+				</ul>
+				<img src="img/NYC parks/1nyccondtresqus2.png" alt="Introductory Questions Image" class="test-image">
+				<h3>Test Plan Introductory Questions</h3>
+				<ol>
+					<li>We’ll first start with your name, age, and where you live at the moment, including your
+						occupation.</li>
+					<li>What experience do you have with New York City parks? How often would you say you go to parks in
+						the city?</li>
+					<li>Have you ever accessed the https://www.nycgovparks.org/ website before? Do you know what it
+						looks like?</li>
+				</ol>
+				<img src="img/NYC parks/Introductory Questions Image.png" alt="Introductory Questions Image"
+					class="test-image">
+				<h3>Tasks as Part of Test Plan</h3>
+				<ol>
+					<li>
+						<h4>Task 1</h4>
+						<p>You are interested in attending an event at a New York City park and would like to inquire
+							about event details in order to decide what event will most suit your needs. Please show me
+							how you would go about doing that on the website.</p>
+					</li>
+					<li>
+						<h4>Task 2</h4>
+						<p>You are an avid park-goer and would like to donate $35 to nycgovparks. Please go ahead and
+							attempt to do that, up until the payment details page.</p>
+					</li>
+					<li>
+						<h4>Task 3</h4>
+						<p>You want to look at park merchandise and are thinking about buying something. Please show me
+							how you would go about doing that.</p>
+					</li>
+				</ol>
+
+				<h3>Follow-Up Questions</h3>
+				<ol>
+					<li>How would you describe the ease of which you navigated the website?</li>
+					<li>In the future, if you were interested in looking for park information, would you consider
+						accessing this website?</li>
+					<li>What was your favorite part of the website, if you have one?</li>
+					<li>What was your least favorite part of the website? What would you change about it?</li>
+					<li>Do you have any additional comments you would like to add?</li>
+				</ol>
+				<img src="img/NYC parks/Follow-Up Questions Image.png" alt="Follow-Up Questions Image"
+					class="test-image">
+			</section>
+
+
+
+			<section id="data-report">
+				<h2>Data Report</h2>
+				<p>Introductory answers</p>
+				<div class="data-report">
+					<img src="img/NYC parks/datareportintro quest.png" alt="Design 1"
+						class="gallery-image full-width-image">
+					<!-- Add the 'full-width-image' class to the desired image -->
+					<p>Participants success rate for Tasks, 1 - success, 0 - failure
+					</p>
+					<img src="img/NYC parks/datareporttasksucess.png" alt="Design 2" class="gallery-image">
+					<p>Participants Tasks completion time (secs) </p>
+					<img src="img/NYC parks/task completion time.png" alt="Design 3" class="gallery-image">
+					<p>Participants ease ratings for Tasks, 1 - very difficult, 5 - very easy
+					</p>
+					<img src="img/NYC parks/ease ratings.png" alt="Design 3" class="gallery-image">
+				</div>
+			</section>
+
+			<section id="recommendations">
+				<h2>Recommendations</h2>
+				<h3>Task 1</h3>
+				<ol>
+					<li>More pictures would break up the monotony of the list format
+					</li>
+					<li>Events should be immediately excluded upon finishing
+					</li>
+					<li>Users should be able to choose what area of the city you are interested in
+					</li>
+					<li>Emphasis on what’s best for kids is a good feature that should be implemented for different age
+						groups
+					</li>
+				</ol>
+				<div class="recommendations-gallery">
+					<img src="img/NYC parks/rec1 (1).png" alt="recommendations-1">
+				</div>
+				<h3>Task 2</h3>
+				<ol>
+
+					<li>More pictures would break up the monotony of the list format
+					</li>
+					<li>Events should be immediately excluded upon finishing
+					</li>
+				</ol>
+				<div class="recommendations-gallery">
+					<img src="img/NYC parks/rec2 (1).png" alt="recommendations-1">
+				</div>
+				<h3>Task 3</h3>
+				<ol>
+
+					<li>Use a different term for “Shop Parks” so it's less confusing
+					</li>
+					<li>Events should be immediately excluded upon finishing
+					</li>
+					<li>Should make it clear that visitors can only purchase merchandise at the parks (not online)
+					</li>
+					<li>Should include images and description of the items
+					</li>
+					<li>Only 5 images of randomly selected merch and is not in gallery mode
+					</li>
+					<li>Only the map product is linked to another page- creates some confusion about what is available
+						and what is not.
+					</li>
+					<li>Confusing to navigate as it is in the same list format that is implemented throughout the
+						website
+					</li>
+				</ol>
+				<div class="recommendations-gallery">
+					<img src="img/NYC parks/rec3 (1).png" alt="recommendations-1">
+				</div>
+
+			</section>
+
+			<section id="final-thoughts">
+				<h2>Final thoughts</h2>
+				<h3>Post test summary</h3>
+
+				<div class="data-report">
+					<img src="img/NYC parks/post test summary.png" alt="recommendations-1">
+				</div>
+
+
+				<h3>Key Findings</h3>
+				<div class="data-report">
+					<img src="img/NYC parks/key findings.png" alt="recommendations-1">
+				</div>
+			</section>
+
+			<div class="project-navigation">
+
+				<a href="5vrchemistry.html" class="previous-project"><i class="fas fa-arrow-left"></i> Previous
+					Project<br> <br> VR chemistry labs </a>
+				<a href="2greenfuel.html" class="next-project">Next Project<br> <br> Green Fuel <i
+						class="fas fa-arrow-right"></i></a>
+			</div>
+<div class="buttons-container">
+            <a href="#project-header">
+                <div class="btn">Project Header</div>
+            </a>
+            <a href="#project-background">
+                <div class="btn">Project Background</div>
+            </a>
+            <a href="#heuristic-reviews">
+                <div class="btn">Heuristic Reviews</div>
+            </a>
+            <a href="#heuristic-problems">
+                <div class="btn">Heuristic Problems</div>
+            </a>
+            <a href="#conducting-the-test">
+                <div class="btn">Conducting The Test</div>
+			</a>
+            <a href="#data-report">
+                <div class="btn">Data Report</div>
+            </a>
+            <a href="#recommendations">
+                <div class="btn">Recommendations</div>
+            </a>
+            <a href="#final-thoughts">
+                <div class="btn">Final Thoughts</div>
+            </a>
+        </div>
+    </main> 
+
+		<footer>
+			<div class="footer-container">
+				<div class="contact-email">
+					<p>Contact: <a href="mailto:manojbitra05@gmail.com">manojbitra05@gmail.com</a></p>
+				</div>
+				<div class="social-links">
+					<a href="https://www.instagram.com/myeyesmb/" target="_blank" rel="noopener noreferrer"><i
+							class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/manojbitra/" target="_blank" rel="noopener noreferrer"><i
+							class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			$(document).ready(function () {
+				$(".slider").slick({
+					dots: true,
+					arrows: true,
+					infinite: true,
+					speed: 300,
+					slidesToShow: 1,
+					adaptiveHeight: true,
+					prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+					nextArrow: '<button type="button" class="slick-next">Next</button>',
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

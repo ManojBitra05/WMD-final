@@ -1,0 +1,310 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #cccccc;
+}
+
+header .menu-btn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  display: none;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .menu-btn:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+#home {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#home p {
+  font-size: 24px;
+  margin: 20px 0 0 0;
+}
+
+#about {
+  background-color: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .about-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#about .about-image {
+  width: 40%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-image img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+
+#about .about-image img:hover {
+  transform: scale(1.1);
+}
+
+#about .about-text {
+  width: 60%;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+#projects {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+}
+
+#projects .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+#projects p {
+  font-size: 18px;
+  margin: 0 0 40px 0;
+}
+
+#projects .project-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+#projects .project {
+  width: calc(20% - 20px);
+  margin: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#projects .project:hover {
+  transform: scale(1.1);
+}
+
+#projects .project img {
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+#projects .project-info {
+  text-align: center;
+}
+
+#projects .project-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#projects .project-info p {
+  font-size: 18px;
+  margin: 0;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+footer .footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .social-links a {
+  color: #ffffff;
+  font-size: 36px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #cccccc;
+}
+
+footer form {
+  width: 50%;
+  text-align: left;
+}
+
+footer form h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+footer form p {
+  font-size: 18px;
+  margin: 0 0 40px 0;
+}
+
+footer form label {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+footer form input[type="text"],
+footer form input[type="email"],
+footer form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer form input[type="submit"] {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer form input[type="submit"]:hover {
+  background-color: #cccccc;
+}
+
+footer .footer-bottom {
+  margin-top: 40px;
+}
+
+footer .footer-bottom p {
+  font-size: 18px;
+  margin: 0;
+}

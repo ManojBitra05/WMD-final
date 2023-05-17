@@ -1,0 +1,312 @@
+main {
+  padding: 0 40px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+header nav ul li a,
+nav li.active a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover,
+header nav ul li.active a {
+  color: #ff9800;
+}
+
+header .menu-btn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  display: none;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .menu-btn:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+/* Sections */
+#home,
+#about,
+#projects {
+  background-color: transparent;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Add keyframes for animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  /* background-image: linear-gradient(45deg, #d1a6de, #6dc7d6);*/
+  background-size: 200% 200%;
+  animation: movingGradient 15s infinite;
+}
+
+.home-container {
+  text-align: center;
+  max-width: 800px;
+  padding: 1rem;
+  /*background-color: rgba(255, 255, 255, 0.8); */
+  /* Add a semi-transparent white background */
+  border-radius: 15px;
+  /* Add rounded corners */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  /* Add a subtle shadow */
+}
+
+.animated-text {
+  animation: fadeInDown 1s ease-out 1;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.animated-btn {
+  animation: fadeInUp 1s ease-out 1;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  /* Add a delay to the button animation */
+  color: #8c8c8c;
+}
+
+
+h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  color: #333;
+}
+
+
+
+#home p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0 0 0;
+  color: #333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-image: linear-gradient(45deg,#b76fff9b, #ff00959b);
+  color: #e6fcff;
+  font-size: 14px !important;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background-color: transparent !important;
+
+}
+
+
+.btn:hover {
+box-shadow: 5px;
+  transform: translateY(-2px);
+
+  background-image: linear-gradient(45deg, #b76fff86, #ff009570); 
+}
+h3 {
+  background-image: linear-gradient(45deg, #001847, #6e005e80);
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.btn:active {
+  background-color: #1b5e20;
+  transform: translateY(0);
+}
+
+
+#about {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 40%;
+  text-align: center;
+}
+
+.about-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.about-text {
+  width: 60%;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+/* Button Styles */
+
+
+
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#landing-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(45deg,#b76fff86, rgb(187, 0, 255, 0.9), #009dff80, rgba(0, 221, 255, 0.502));
+  background-clip: text !important;
+  color: rgba(0, 221, 255, 0.25) !important;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 300ms;
+  animation: fadeInScale 1s ease-in-out forwards;
+}
+
+#landing-text:hover {
+  transform: translateY(-5px) scale(1.1) rotate(-0.1deg);
+  background-image: linear-gradient(45deg, rgba(0, 221, 255, 0.5), rgb(0, 157, 255, 0.5), rgb(187, 0, 255, 0.9));
+  color: transparent;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
